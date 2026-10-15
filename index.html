@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Política de privacidad de la aplicación Conteo de Donas.">
+  <title>Política de privacidad | Conteo de Donas</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f4f7f6;
+      --surface: #ffffff;
+      --primary: #075e59;
+      --primary-dark: #03433f;
+      --text: #17211f;
+      --muted: #52605d;
+      --border: #d8e1df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 3rem 1.25rem;
+    }
+
+    header div,
+    main {
+      width: min(100%, 850px);
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    main {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgb(23 33 31 / 8%);
+    }
+
+    h2 {
+      margin-top: 2.25rem;
+      color: var(--primary-dark);
+      font-size: 1.4rem;
+      line-height: 1.3;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    li + li {
+      margin-top: 0.45rem;
+    }
+
+    .updated {
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 2.25rem 1rem;
+      }
+
+      main {
+        margin: 0;
+        padding: 1.5rem 1rem 2rem;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Política de privacidad</h1>
+      <p>Conteo de Donas para Android</p>
+    </div>
+  </header>
+
+  <main>
+    <p class="updated">
+      <strong>Última actualización:</strong> 15 de octubre de 2026
+    </p>
+
+    <h2>1. Responsable y alcance</h2>
+    <p>
+      Hector Ivan Hernandez es responsable de la aplicación
+      <strong>Conteo de Donas</strong>, identificada con el paquete
+      <code>com.donutscount.app</code>.
+    </p>
+    <p>
+      Esta política explica cómo la aplicación accede, utiliza, conserva y
+      protege la información necesaria para registrar conteos de producción
+      y respaldar su evidencia en la cuenta de Google Drive elegida por el
+      usuario.
+    </p>
+
+    <h2>2. Información que utiliza la aplicación</h2>
+    <p>Conteo de Donas puede utilizar las siguientes categorías de datos:</p>
+    <ul>
+      <li>
+        Nombre visible, dirección de correo e identificador de la cuenta de
+        Google seleccionada para conectar Google Drive.
+      </li>
+      <li>
+        Fechas de producción, jornadas, charolas, folios, conteos, puntos
+        marcados, coordenadas y totales.
+      </li>
+      <li>
+        Fotografías capturadas o seleccionadas por el usuario, imágenes base
+        e imágenes anotadas con los puntos de conteo.
+      </li>
+      <li>
+        Archivos técnicos de respaldo, como resúmenes, manifiestos, sumas de
+        verificación, versiones y estados de sincronización.
+      </li>
+      <li>
+        Preferencias locales de seguridad, incluida la configuración del PIN
+        y su mecanismo de recuperación.
+      </li>
+    </ul>
+
+    <h2>3. Finalidades del tratamiento</h2>
+    <p>La información se utiliza exclusivamente para:</p>
+    <ul>
+      <li>Registrar y corregir conteos de producción.</li>
+      <li>Mostrar el historial y la evidencia de jornadas cerradas.</li>
+      <li>
+        Crear, verificar, subir y restaurar respaldos en Google Drive.
+      </li>
+      <li>
+        Proteger el acceso local mediante un PIN opcional.
+      </li>
+      <li>
+        Informar al usuario sobre respaldos pendientes, errores o la
+        necesidad de reconectar Google Drive.
+      </li>
+    </ul>
+
+    <h2>4. Funcionamiento local</h2>
+    <p>
+      La aplicación funciona principalmente de forma local. Los registros,
+      fotografías y preferencias se guardan en el almacenamiento privado de
+      la aplicación en el dispositivo.
+    </p>
+    <p>
+      El PIN y sus datos de protección no se envían a Google Drive ni al
+      desarrollador. La aplicación utiliza las medidas de seguridad
+      proporcionadas por Android, incluido Android Keystore para proteger
+      secretos locales.
+    </p>
+
+    <h2>5. Google Drive</h2>
+    <p>
+      La conexión con Google Drive es opcional y requiere una acción expresa
+      del usuario. Conteo de Donas solicita el alcance limitado
+      <code>drive.file</code>, que permite trabajar con los archivos y
+      carpetas creados o abiertos por la propia aplicación.
+    </p>
+    <p>
+      Los respaldos se almacenan en la cuenta de Google elegida por el
+      usuario. Pueden incluir imágenes base, imágenes anotadas, resúmenes,
+      manifiestos y sumas de verificación.
+    </p>
+    <p>
+      Los tokens de acceso se solicitan a los servicios de Google cuando son
+      necesarios y no se conservan como credenciales permanentes dentro de
+      la aplicación.
+    </p>
+
+    <h2>6. Compartición y venta de datos</h2>
+    <p>
+      Conteo de Donas no vende información personal, no muestra publicidad y
+      no utiliza los datos para marketing, elaboración de perfiles o
+      seguimiento entre aplicaciones.
+    </p>
+    <p>
+      La información sólo se procesa en el dispositivo y, cuando el usuario
+      conecta Drive, mediante los servicios de Google necesarios para
+      autenticar la cuenta y almacenar o recuperar los archivos autorizados.
+      El desarrollador no opera un servidor propio que reciba las jornadas,
+      fotografías o conteos.
+    </p>
+
+    <h2>7. Conservación y eliminación</h2>
+    <p>
+      Los datos operativos locales se conservan mientras la aplicación
+      permanezca instalada o hasta que el usuario elimine sus datos desde la
+      configuración de Android.
+    </p>
+    <p>
+      La evidencia respaldada se conserva localmente durante al menos
+      14 días completos. Después de ese periodo, la aplicación puede ofrecer
+      una limpieza manual. Sólo libera paquetes locales cuando el usuario lo
+      confirma y el respaldo remoto puede verificarse.
+    </p>
+    <p>
+      La aplicación no elimina automáticamente los archivos almacenados en
+      Google Drive. El usuario controla su conservación y puede borrar
+      manualmente la carpeta <strong>Donuts Count</strong> y vaciar la
+      papelera de Drive cuando desee eliminarlos definitivamente.
+    </p>
+
+    <h2>8. Opciones del usuario</h2>
+    <p>El usuario puede:</p>
+    <ul>
+      <li>No conectar una cuenta de Google y utilizar las funciones locales.</li>
+      <li>Desconectar Google Drive desde los ajustes de la aplicación.</li>
+      <li>
+        Revocar el acceso desde la configuración de seguridad de su cuenta
+        de Google.
+      </li>
+      <li>
+        Borrar los archivos de respaldo directamente desde Google Drive.
+      </li>
+      <li>
+        Eliminar los datos locales desde la configuración de Android o
+        desinstalando la aplicación.
+      </li>
+    </ul>
+    <p>
+      Desconectar la cuenta detiene el acceso futuro de la aplicación, pero
+      no elimina automáticamente los archivos que ya existen en Drive.
+    </p>
+
+    <h2>9. Seguridad</h2>
+    <p>
+      La aplicación limita el acceso a Drive al permiso necesario, utiliza
+      conexiones HTTPS y verifica la integridad de los paquetes de evidencia
+      mediante sumas de comprobación. Ningún sistema ofrece seguridad
+      absoluta, pero se aplican medidas razonables para reducir accesos,
+      alteraciones o pérdidas no autorizadas.
+    </p>
+
+    <h2>10. Menores de edad</h2>
+    <p>
+      Conteo de Donas es una herramienta de trabajo para personal autorizado
+      de establecimientos y no está dirigida a menores de edad.
+    </p>
+
+    <h2>11. Alojamiento de esta política</h2>
+    <p>
+      Esta página está alojada en GitHub Pages. GitHub puede procesar datos
+      técnicos de visita, como la dirección IP, conforme a sus propias
+      políticas y medidas de seguridad. La página no incorpora formularios,
+      publicidad ni herramientas propias de análisis.
+    </p>
+
+    <h2>12. Cambios a esta política</h2>
+    <p>
+      Esta política puede actualizarse cuando cambien las funciones o el
+      tratamiento de datos de la aplicación. La fecha de actualización se
+      mostrará al inicio de la página.
+    </p>
+
+    <h2>13. Contacto</h2>
+    <p>
+      Para consultas de privacidad, asistencia con la eliminación de datos o
+      dudas sobre esta política, escribe a
+      <a href="mailto:ivan6588g@gmail.com">ivan6588g@gmail.com</a>.
+    </p>
+
+    <footer>
+      <p>© 2026 Hector Ivan Hernandez · Conteo de Donas</p>
+    </footer>
+  </main>
+</body>
+</html>
